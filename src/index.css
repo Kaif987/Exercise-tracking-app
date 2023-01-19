@@ -1,13 +1,122 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: none;
+  padding: 0;
+  list-style-type: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #eeeee4;
+  padding: 1em 5em;
+}
+
+body{
+  margin: 100px 100px;
+  font-family: sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+.navbar > ul{
+  display: flex;
+  gap: 1em;
+}
+
+.navbar > ul >li> a{
+  text-decoration: none ;
+}
+
+.navbar > ul >li> a:hover{
+  text-decoration: underline;
+}
+
+.createUser > div{
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+input{
+  padding: .5em 1em;
+}
+
+.custom_button {
+  margin-top: 1em;
+  padding: 1em 2em ;
+  background-color: #2596be;
+  color: white;
+  border-radius: .5em;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  gap: .3em;
+}
+
+.row{
+  display: flex;
+  border-top: 1px solid black;
+  align-items: center;
+}
+
+.row:first-child{
+  border: none;
+}
+
+.row > *{
+  width: 100%;
+  text-align: center;
+}
+
+.custom_button:hover {
+  cursor: pointer;
+  background-color: #3d8aa5;
+  color: black;
+  border: 1px solid black;
+}
+
+.addExercise{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.exercise_table{
+  border: 1px solid black;
+}
+
+.exercise_table th,
+.exercise_table tr {
+  margin-top: 5px;
+}
+
+.delete_btn{
+  border: none;
+  padding: 1em 2em;
+  text-transform: capitalize;
+  background-color: #Ec7857  ;
+  color: white;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.delete_btn:hover{
+  cursor: pointer;
+  background-color: red;
+  border: 1px solid black;
+}
+
+.username_add{
+  padding: .5em 1em;
 }
